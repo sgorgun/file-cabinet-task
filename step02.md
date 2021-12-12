@@ -4,16 +4,16 @@
 
 Цель: создание сервиса (FileCabinetService), который должен хранить записи (FileCabinetRecord) с личной информацией о человеке. Добавление команд create, list и stat.
 
-Все изменения (commits) должны храниться в ветке _step2-add-service_, а после окончания работы должны быть слиты в ветку _master_.
+Все изменения (commits) должны храниться в ветке _step2-add-service_, а после окончания работы должны быть слиты в ветку _main_.
 
 
 ### Выполнение
 
-1. Создайте новую ветку _step2-add-service_ от ветки _master_.
+1. Создайте новую ветку _step2-add-service_ от ветки _main_.
 
 ```sh
 $ git branch
-* master
+* main
   step1-add-file-cabinet-app
 
 $ git checkout -b step2-add-service
@@ -248,24 +248,24 @@ $ git commit -m "Extend FileCabinetRecord class with new properties - <property1
 $ git push --set-upstream origin step2-add-service
 ```
 
-20. Переключитесь на ветку master и сделайте no fast-forward merge изменений из ветки _step2-add-service_.
+20. Переключитесь на ветку main и сделайте no fast-forward merge изменений из ветки _step2-add-service_.
 
 ```sh
-$ git checkout master
+$ git checkout main
 $ git merge step2-add-service --no-ff
 ```
 
-21. Сделайте push изменений из локальной ветки master в удаленную ветку.
+21. Сделайте push изменений из локальной ветки mian в удаленную ветку.
 
 ```sh
 $ git push
 ```
 
-22. Посмотрите журнал коммитов текущей ветки (_master_) и найдите merge commit (коммит с описанием "Merge branch 'step2-add-service'") - он появился, так как при слиянии был применен ключ --no-ff.
+22. Посмотрите журнал коммитов текущей ветки (_main_) и найдите merge commit (коммит с описанием "Merge branch 'step2-add-service'") - он появился, так как при слиянии был применен ключ --no-ff.
 
 ```sh
 $ git log --oneline
-62948a6 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'step2-add-service'
+62948a6 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'step2-add-service'
 e8e282a (origin/step2-add-service, step2-add-service) Extend FileCabinetRecord class with new properties - Property1, Property2, Property3.
 8fcebaf Add implementation for list command.
 7175748 Add implementation for create command.

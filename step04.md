@@ -4,7 +4,7 @@
 
 Цель: добавление возможностей поиска - команды find.
 
-Все изменения (commits) должны храниться в ветке _step4-add-search_, а после окончания работы должны быть слиты в ветку _master_.
+Все изменения (commits) должны храниться в ветке _step4-add-search_, а после окончания работы должны быть слиты в ветку _main_.
 
 
 ### Выполнение
@@ -73,15 +73,15 @@ private readonly Dictionary<string, List<FileCabinetRecord>> firstNameDictionary
 
 6. Добавьте словарь dateOfBirthDictionary и исправьте код, чтобы поиск в FindByDateOfBirth происходил при помощи словаря. "Improve find dateofbirth performance with dictionary."
 
-7. Сделайте push локальной ветки в удаленную ветку. Затем переключитесь на ветку master и сделайте _squash merge_ изменений из ветки _step4-add-search_.
+7. Сделайте push локальной ветки в удаленную ветку. Затем переключитесь на ветку main и сделайте _squash merge_ изменений из ветки _step4-add-search_.
 
 ```sh
 $ git push --set-upstream origin step4-add-search
-$ git checkout master
+$ git checkout main
 $ git merge step4-add-search --squash
 ```
 
-8. Просмотрите изменения, cделайте push изменений из локальной ветки master в удаленную ветку. Комментарий merge-commit должен содержать комментарии всех commit из целевой ветки.
+8. Просмотрите изменения, cделайте push изменений из локальной ветки main в удаленную ветку. Комментарий merge-commit должен содержать комментарии всех commit из целевой ветки.
 
 ```sh
 $ git status

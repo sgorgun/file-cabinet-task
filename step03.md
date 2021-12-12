@@ -4,12 +4,12 @@
 
 Цель: добавление валидации данных при пользовательском вводе, а также добавление возможности редактирования - команды edit.
 
-Все изменения (commits) должны храниться в ветке _step3-add-validation_, а после окончания работы должны быть слиты в ветку _master_.
+Все изменения (commits) должны храниться в ветке _step3-add-validation_, а после окончания работы должны быть слиты в ветку _main_.
 
 
 ### Выполнение
 
-1. Создайте новую ветку _step3-add-validation_ от ветки _master_.
+1. Создайте новую ветку _step3-add-validation_ от ветки _main_.
 
 2. Измените код метода _FileCabinetService.CreateRecord_ таким образом, чтобы метод бросал исключение ArgumentException или ArgumentNullException, если критерии параметров не удовлетворяются.
 
@@ -47,11 +47,11 @@ Record #1 is updated.
 
 8. Соберите проект, проверьте отсутствие ошибок. Сделайте commit, сообщение "Add implementation for edit command."
 
-9. Сделайте push локальной ветки в удаленную ветку. Затем переключитесь на ветку master и сделайте no fast-forward merge изменений из ветки _step3-add-validation_. Сделайте push изменений из локальной ветки master в удаленную ветку.
+9. Сделайте push локальной ветки в удаленную ветку. Затем переключитесь на ветку main и сделайте no fast-forward merge изменений из ветки _step3-add-validation_. Сделайте push изменений из локальной ветки main в удаленную ветку.
 
 ```sh
 $ git push --set-upstream origin step3-add-validation
-$ git checkout master
+$ git checkout main
 $ git merge step3-add-validation --no-ff
 $ git push
 ```
